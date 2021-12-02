@@ -1,0 +1,45 @@
+.clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients__title{
+    margin-bottom: 50px;
+}
+
+.clients__list{
+    display: flex;
+}
+
+.clients__item{
+    border: 1px solid $socials-color;
+    border-radius: 4px;
+    margin-right: 30px;
+    width: 170px;
+    height: 92px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.clients__icon{
+    width: 170px;
+    height: 92px;
+    fill: $socials-color;
+}
+
+.clients__link{
+    font-size: 0;
+
+    &:hover .clients__icon,
+    &:focus .clients__icon{
+        fill: $accent-color;
+        border: 1px solid $accent-color;
+        border-radius: 4px;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+
+

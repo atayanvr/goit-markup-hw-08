@@ -1,0 +1,48 @@
+.list-work__icon{
+    display: flex;
+  min-height: 120px;
+  background-color: $background-button;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.section-work{
+    padding-bottom: 47px;
+}
+
+.list-work{
+    display: flex;
+    padding-left: 0;
+}
+
+.list-work > li{
+    width: 265px;
+    margin-right: 25px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+
+
+.list-work__description{
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+margin: 0;
+margin-top: 10px;
+}
+
+.list-work__title{
+
+font-size: 14px;
+font-weight: 700;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+
+
