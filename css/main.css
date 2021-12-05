@@ -42,11 +42,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  width: 1200px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .main-nav {
@@ -55,7 +67,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-nav {
-  display: flex;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+  }
 }
 
 .site-nav .link:hover,
@@ -122,8 +140,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact {
-  display: flex;
+  display: none;
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+  }
 }
 
 .contact__link {
@@ -159,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-  max-width: 1600px;
+  width: 480px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
@@ -167,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero__container {
-  width: 640px;
+  width: 480px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -373,8 +397,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .list-work {
-  display: flex;
   padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .list-work {
+    display: flex;
+  }
 }
 
 .list-work > li {
@@ -412,6 +441,12 @@ h1, h2, h3, h4, h5, h6 {
 .section-do {
   padding-top: 47px;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-do {
+    display: none;
+  }
 }
 
 .section-do__title {
@@ -480,8 +515,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-team__list {
-  display: flex;
   padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section-team__list {
+    display: flex;
+  }
 }
 
 .section-team__description {
@@ -565,8 +605,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 50px;
 }
 
-.clients__list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .clients__list {
+    display: flex;
+  }
 }
 
 .clients__item {

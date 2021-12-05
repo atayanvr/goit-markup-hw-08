@@ -3,8 +3,12 @@
 }
 
 .contact{
-    display: flex;
+    display: none;
     margin-left: auto;
+
+    @media screen and (min-width: 768px){
+        display: flex;
+    }
 }
 
 .contact__link{
