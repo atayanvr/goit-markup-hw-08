@@ -2,17 +2,56 @@
     background-image: linear-gradient(
         to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)
     ),
-    url(../images/hero.jpg);
+    url(../images/hero-mobile.jpg);
    
-    width: 480px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    
+     background-repeat: no-repeat;
+     background-position: center;
+  background-size: cover;
+    padding-top: 118px;
+    padding-bottom: 118px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and(min-width: 1200px){
+        padding-top: 200px;
+        padding-bottom: 200px;
+        max-width: 1600px;
+    }
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile@2x.jpg");
+    }
+  }
+  
+  @media screen and (min-width: 481px) {
+    .hero {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet.jpg");
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet@2x.jpg");
+    }
+  }
+  
+  @media screen and (min-width: 769px) {
+    .hero {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero@2x.jpg");
+    }
+  }
+  
+
 .hero__container{
-    width: 480px;
+    width: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -20,15 +59,20 @@
 }
 
 .hero__title{
-    
+    font-size: 26px;
+    line-height: 1.61;
     color: $primary-white-color;
-font-size: 44px;
-font-weight: 900;
-line-height: 1.36;
-letter-spacing: 0.06em;
-text-align: center;
-text-transform: uppercase;
-margin-bottom: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-bottom: 30px;
+    
+    @media screen and(min-width: 1200px){
+        font-size: 44px;
+        line-height: 1.36;
+    }
+
 
 }
 

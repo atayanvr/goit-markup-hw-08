@@ -10,11 +10,27 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
 <link rel="stylesheet" href="./css/main.min.css">
 </head>
+
 <body>
+   
    <header class="header">
       <nav class="container main-nav">
             <a href="./index.html" class="logo">Web<span>Studio</span>
             </a>
+
+            <button class="menu-button is-open" type="button"
+             data-menu-button aria-controls="menu-container">
+               <svg width="40px" height="40px"
+               aria-label="Переключатель мобильного меню">
+                  <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                  <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+               </svg>
+            </button>
+
+            <div class="menu-container" id="menu-container" data-menu>
+               conent tipa
+            </div>
+
         <ul class="site-nav list">
          <li class="site-nav__item"><a class="link current" href="./index.html">Студия</a></li>
           <li class="site-nav__item"><a class="link" href="./portfolio.html">Портфолио</a></li>
@@ -111,7 +127,7 @@
 
 
        <!-- Work section-->
-   <section class="section-work section">
+   <!-- <section class="section-work section">
       <div class="container">
 
       <ul class="list-work list">
@@ -154,11 +170,11 @@
       </ul>
       
       </div>
-   </section>
+   </section> -->
 
     <!-- Examples work section-->
 
-   <section class="section-do">
+   <!-- <section class="section-do">
       <div class="container">
       <h2 class="section-do__title title">Чем мы занимаемся</h2>
 <ul class="section-do__list list">
@@ -183,11 +199,11 @@
    </li>
 </ul>
 </div>
-   </section>
+   </section> -->
 
     <!-- Team section-->
 
-   <section class="section-team section">
+   <!-- <section class="section-team section">
       <div class="container">
       <h2 class="section-team__title title">Наша команда</h2>
 
@@ -195,7 +211,7 @@
 
           <!-- First card -->
 
-         <li class="section-team__item">
+         <!-- <li class="section-team__item">
             <img src="./images/team1.jpg" alt="Дизайнер" width="270">
             <div class="section-team__wrap">
             <h3 class="section-team__name">Игорь Демьяненко</h3>
@@ -353,11 +369,11 @@
          </li>
       </ul>
       </div>
-   </section>
+   </section> -->
 
    <!-- Clients -->
 
-   <section class="clients">
+   <!-- <section class="clients">
       <div class="container">
 
          <h2 class="clients__title title">Постоянные клиенты</h2>
@@ -414,11 +430,11 @@
          </ul>
       </div>
    </section>
-   </main>
+   </main> -->
 
     <!-- Footer Ooo-->
 
-   <footer class="footer">
+   <!-- <footer class="footer">
 
       <div class="container">
       <div class="footer__wrap">
@@ -428,11 +444,11 @@
          <a class="footer__link" href="mailto:info@example.com">info@example.com</a><br />
          <a class="footer__link" href="tel:+380991111111">+38 099 111 11 11</a>
       </div>
-      </div>
+      </div> -->
 
       <!-- Socials -->
 
-<div class="footer-socials">
+<!-- <div class="footer-socials">
    <p class="footer-socials__title">Присоединяйтесь</p>
 
    <ul class="footer-socials__list">
@@ -491,7 +507,10 @@
 </div>
 
       </div>
-   </footer>
-   <script src="./js/modal.js"></script>
+   </footer> -->
+
+  
+    <script src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
