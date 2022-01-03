@@ -3,8 +3,17 @@
 }
 
 .contact{
-    
     margin-left: auto;
+
+    @media screen and (min-width: 1200px){
+        display: flex;
+        margin-right: 15px;
+    }
+
+    @media screen and (max-width: 767px){
+        margin-bottom: 64px;
+        margin-right: 15px;
+    }
 
 }
 
@@ -17,6 +26,10 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     align-items: center;
+
+    @media screen and (min-width: 768px){
+        margin-bottom: 10px;
+    }
 
     &:hover, &:focus{
         color: $accent-color;

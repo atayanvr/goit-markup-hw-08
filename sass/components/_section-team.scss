@@ -8,15 +8,20 @@
     }
     
     .section-team__title{
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+
+        @media screen and(min-width:1200px){
+            margin-bottom: 50px;
+        }
     }
     
     .section-team__list{
-        
+    
         padding-left: 0;
 
         @media screen and(min-width: 768px){
             display: flex;
+            flex-wrap: wrap;
         }
     }
     
@@ -38,6 +43,16 @@
         &:last-child{
             margin: 0;
         }
+
+        @media screen and (max-width: 767px) {
+            &:not(:first-child) {
+              margin-top: 30px;
+            }
+          }
+
+          @media screen and (min-width: 768px){
+              flex-basis: ;
+          }
     }
 
     .section-team__wrap{

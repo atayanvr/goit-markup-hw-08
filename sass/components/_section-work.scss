@@ -1,11 +1,15 @@
 .list-work__icon{
-   
+   display: flex;
   min-height: 120px;
   background-color: $background-button;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 767px){
+    margin-top: 30px;
+  }
 }
 
 .section-work{
@@ -22,11 +26,23 @@
 }
 
 .list-work > li{
-    width: 265px;
+    
     margin-right: 25px;
 
     &:last-child{
         margin-right: 0;
+    }
+
+    @media screen and (max-width: 767px){
+        max-width: 450px;
+      }
+    
+      @media screen and (min-width: 768px){
+          width: 354px;
+      }
+    
+      @media screen and (min-width: 1200px){
+        width: 270px;
     }
 }
 
@@ -47,6 +63,10 @@ font-weight: 700;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
+
+@media screen and (max-width: 767px){
+    text-align: center;
+}
 }
 
 

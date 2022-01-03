@@ -8,8 +8,13 @@ body{
 }
 
 .section{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 ul {
@@ -34,3 +39,19 @@ h1,h2,h3,h4,h5,h6{
 .list{
     list-style: none;
 }
+
+.title{
+ 
+font-size: 28px;
+font-weight: 700;
+line-height: 1.18;
+letter-spacing: 0.03em;
+text-align: center;
+
+@media screen and (min-width: 1200px){
+    font-size: 36px;
+}
+    
+   
+    
+    }
